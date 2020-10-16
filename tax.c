@@ -3,15 +3,16 @@
 int
 main ()
 {
-  int income,hl,tax,fincome;
+  int income,hl;
+  int tax,fincome; // enhanced
   printf ("Enter your annual income: ");
   scanf ("%d",&income);
   printf ("\n Enter home loan amount: ");
   scanf ("%d",&hl);
   if(hl < 200000)
-    {
+    
       fincome=income-(hl + 50000);
-    }
+    
   else
     fincome=income-(250000);
 
